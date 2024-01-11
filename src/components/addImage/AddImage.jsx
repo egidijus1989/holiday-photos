@@ -7,7 +7,9 @@ import {auth} from "../../services/AuthServices"
 
 const AddImage = () => {
     return(
-        <></>
+        <div className="container-flui">
+            <p>add photo</p>
+        </div>
     )
 }
 export default AddImage
