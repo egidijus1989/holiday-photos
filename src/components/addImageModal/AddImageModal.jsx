@@ -7,8 +7,6 @@ import { Link, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../services/AuthServices";
-import { type } from "@testing-library/user-event/dist/type";
-import Form from "react-bootstrap/Form";
 
 function Example() {
   const [show, setShow] = useState(false);
