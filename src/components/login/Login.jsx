@@ -39,9 +39,6 @@ const Login = () => {
     if (user) navigate("/images");
   }, [user, loading]);
 
-  console.log(credentials);
-  console.log(disabled);
-
   return (
     <>
       <h2 className="mt-3 text-center">Log In</h2>
@@ -78,8 +75,7 @@ const Login = () => {
             Have no account? <Link to={"/register"}>Sign Up</Link>
           </p>
           <p>
-            Unable to Log In ?{" "}
-            <Link to="/password-reset">Reset Password</Link>{" "}
+            Unable to Log In ? <Link to="/password-reset">Reset Password</Link>{" "}
           </p>
         </div>
       </form>

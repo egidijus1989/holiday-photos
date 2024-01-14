@@ -1,0 +1,16 @@
+div.image {
+  // border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  .image1 {
+    border-radius: 50%;
+  }
+  .deleteIcon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

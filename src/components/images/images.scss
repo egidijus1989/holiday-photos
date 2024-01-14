@@ -1,0 +1,11 @@
+.mainDiv {
+  position: relative;
+  .btn-light {
+    width: 5rem;
+    height: 5rem;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+}

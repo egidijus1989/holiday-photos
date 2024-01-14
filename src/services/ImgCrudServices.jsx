@@ -1,4 +1,5 @@
 import firebase from "../firebase";
+import { doc, deleteDoc, collection } from "firebase/firestore";
 
 export const addWork = (data) => {
   firebase.firestore().collection("works").add(data);
@@ -20,11 +21,12 @@ export const getAllWorks = (onWorksChanged, user) => {
 export const deleteWork = (id) => {
   firebase.firestore().collection("works").doc(id).delete();
 };
+
 export const showById = (item, id) => {
   firebase
     .firestore()
     .collection("works")
-    
+
     .doc(id)
     .get()
     .then((docRef) => {
