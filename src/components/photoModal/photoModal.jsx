@@ -1,8 +1,9 @@
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import Image9 from "../image/Image9";
 
-function Example() {
+function PhotoModal() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -10,9 +11,7 @@ function Example() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
-      </Button>
+      <div onClick={handleShow}></div>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -32,4 +31,4 @@ function Example() {
   );
 }
 
-export default Example;
+export default PhotoModal;

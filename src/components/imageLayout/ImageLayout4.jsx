@@ -1,4 +1,3 @@
-import Image2 from "../image/Image4";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import * as service from "../../services/ImgCrudServices";
@@ -25,7 +24,7 @@ const imageLayout2 = () => {
         style={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-between",
+          justifyContent: "center",
         }}
       >
         {images.map((image) => (

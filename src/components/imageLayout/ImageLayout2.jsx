@@ -20,9 +20,11 @@ const imageLayout2 = () => {
   return (
     <div className="container mainDiv">
       <FormatModal />
-      {images.map((image) => (
-        <Image2 key={image.id} id={image.id} imageUrl={image.imageUrl} />
-      ))}
+      <div style={{ margin: "auto", width: "50%" }}>
+        {images.map((image) => (
+          <Image2 key={image.id} id={image.id} imageUrl={image.imageUrl} />
+        ))}
+      </div>
     </div>
   );
 };

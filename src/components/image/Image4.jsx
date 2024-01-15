@@ -14,11 +14,12 @@ const Image4 = (props) => {
   };
 
   return (
-    <div className="image " style={{ width: "29rem", marginBottom: "10rem" }}>
+    <div className="image " style={{ width: "45%", marginBottom: "10rem" }}>
       <img
         src={props.imageUrl}
         className="card-img-top image-fluid"
         alt="Photo label"
+        style={{ aspectRatio: "3/4" }}
       />
       <div className="deleteIcon">
         <Link

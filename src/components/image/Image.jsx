@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { MdDelete } from "react-icons/md";
 import "./image.scss";
+import PhotoModal from "../photoModal/photoModal";
 
 const Image = (props) => {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ const Image = (props) => {
         src={props.imageUrl}
         className="card-img-top image1"
         alt="Photo label"
-        style={{ borderRadius: "50%" }}
+        style={{ borderRadius: "50%", aspectRatio: "1/1" }}
       />
       <div className="deleteIcon">
         <Link

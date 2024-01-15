@@ -5,7 +5,7 @@ import * as service from "../../services/ImgCrudServices";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../services/AuthServices";
 import FormatModal from "../formatModal/formatModal";
-import Image5 from "../image/Image2";
+import Image5 from "../image/image5";
 
 const imageLayout5 = () => {
   const [images, setImages] = useState([]);

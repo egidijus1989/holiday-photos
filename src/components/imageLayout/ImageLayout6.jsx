@@ -1,4 +1,4 @@
-import Image from "../image/Image";
+import Image6 from "../image/Image6";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import * as service from "../../services/ImgCrudServices";
@@ -6,7 +6,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../services/AuthServices";
 import FormatModal from "../formatModal/formatModal";
 
-const imageLayout = () => {
+const imageLayout6 = () => {
   const [images, setImages] = useState([]);
   const [user, loading, error] = useAuthState(auth);
 
@@ -19,12 +19,10 @@ const imageLayout = () => {
   return (
     <div className="container mainDiv">
       <FormatModal />
-      <div className="" style={{ margin: "auto", width: "50%" }}>
-        {images.map((image) => (
-          <Image key={image.id} id={image.id} imageUrl={image.imageUrl} />
-        ))}
-      </div>
+      {images.map((image) => (
+        <Image6 key={image.id} id={image.id} imageUrl={image.imageUrl} />
+      ))}
     </div>
   );
 };
-export default imageLayout;
+export default imageLayout6;
