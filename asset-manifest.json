@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/holyday-photos/static/css/main.1ffc9eb6.css",
-    "main.js": "/holyday-photos/static/js/main.a5daac88.js",
-    "index.html": "/holyday-photos/index.html",
-    "main.1ffc9eb6.css.map": "/holyday-photos/static/css/main.1ffc9eb6.css.map",
-    "main.a5daac88.js.map": "/holyday-photos/static/js/main.a5daac88.js.map"
+    "main.css": "/holiday-photos/static/css/main.1ffc9eb6.css",
+    "main.js": "/holiday-photos/static/js/main.1dd94fa0.js",
+    "index.html": "/holiday-photos/index.html",
+    "main.1ffc9eb6.css.map": "/holiday-photos/static/css/main.1ffc9eb6.css.map",
+    "main.1dd94fa0.js.map": "/holiday-photos/static/js/main.1dd94fa0.js.map"
   },
   "entrypoints": [
     "static/css/main.1ffc9eb6.css",
-    "static/js/main.a5daac88.js"
+    "static/js/main.1dd94fa0.js"
   ]
 }
