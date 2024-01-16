@@ -1,4 +1,4 @@
-import Image9 from "../image/Image";
+import Image9 from "../image/Image9";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import * as service from "../../services/ImgCrudServices";
@@ -20,9 +20,17 @@ const imageLayout9 = () => {
   return (
     <div className="container mainDiv">
       <FormatModal />
-      <div className="photoContainerFormat2">
-        {images.map((image) => (
-          <Image9 key={image.id} id={image.id} imageUrl={image.imageUrl} />
+      <div
+        className="photoContainerFormat2"
+        style={{ display: "flex", flexWrap: "wrap" }}
+      >
+        {images.map((image, index) => (
+          <Image9
+            key={image.id}
+            id={image.id}
+            imageUrl={image.imageUrl}
+            index={(index % 3) + 1 + "picture9Layout"}
+          />
         ))}
       </div>
     </div>

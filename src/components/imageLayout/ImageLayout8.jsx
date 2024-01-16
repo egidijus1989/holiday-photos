@@ -1,4 +1,4 @@
-import Image8 from "../image/Image";
+import Image8 from "../image/Image8";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import * as service from "../../services/ImgCrudServices";
@@ -16,12 +16,25 @@ const imageLayout8 = () => {
       service.getAllWorks((images) => setImages(images), user);
     }
   }, [user, loading]);
+
   return (
     <div className="container mainDiv">
       <FormatModal />
-      <div className="photoContainerFormat2">
-        {images.map((image) => (
-          <Image8 key={image.id} id={image.id} imageUrl={image.imageUrl} />
+      <div
+        className="photoContainerFormat7"
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
+      >
+        {images.map((image, index) => (
+          <Image8
+            key={image.id}
+            id={image.id}
+            imageUrl={image.imageUrl}
+            index={(index % 4) + 1 + "picture8Layout"}
+          />
         ))}
       </div>
     </div>

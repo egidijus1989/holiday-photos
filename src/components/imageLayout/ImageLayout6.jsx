@@ -16,12 +16,27 @@ const imageLayout6 = () => {
       service.getAllWorks((images) => setImages(images), user);
     }
   }, [user, loading]);
+  console.log(images);
   return (
     <div className="container mainDiv">
       <FormatModal />
-      {images.map((image) => (
-        <Image6 key={image.id} id={image.id} imageUrl={image.imageUrl} />
-      ))}
+      <div
+        className="photoContainerFormat2"
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
+      >
+        {images.map((image, index) => (
+          <Image6
+            key={image.id}
+            id={image.id}
+            imageUrl={image.imageUrl}
+            index={(index % 3) + 1 + "picture"}
+          />
+        ))}
+      </div>
     </div>
   );
 };

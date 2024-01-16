@@ -3,7 +3,7 @@ import * as service from "../../services/ImgCrudServices";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { MdDelete } from "react-icons/md";
-import "./image.scss";
+import "./image8.scss";
 
 const Image8 = (props) => {
   const navigate = useNavigate();
@@ -14,12 +14,13 @@ const Image8 = (props) => {
   };
 
   return (
-    <div className="image">
+    <div className="image" id={props.index} style={{ width: "45%" }}>
       <img
         src={props.imageUrl}
+        id={props.index}
         className="card-img-top image1"
         alt="Photo label"
-        style={{ borderRadius: "50%" }}
+        style={{ aspectRatio: "1/1" }}
       />
       <div className="deleteIcon">
         <Link

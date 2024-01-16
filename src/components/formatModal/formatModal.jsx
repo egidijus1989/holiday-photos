@@ -32,7 +32,7 @@ function Example() {
         show={show}
         onHide={handleClose}
         className="formatModal"
-        style={{ width: "300px" }}
+        style={{ width: "300px", background: "rgba(240, 248, 255, 0.18)" }}
       >
         <Modal.Header closeButton>
           <Modal.Title>Format</Modal.Title>
