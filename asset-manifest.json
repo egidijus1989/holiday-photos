@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/holiday-photos/static/css/main.1ffc9eb6.css",
-    "main.js": "/holiday-photos/static/js/main.1dd94fa0.js",
+    "main.css": "/holiday-photos/static/css/main.671328a8.css",
+    "main.js": "/holiday-photos/static/js/main.01fd204e.js",
     "index.html": "/holiday-photos/index.html",
-    "main.1ffc9eb6.css.map": "/holiday-photos/static/css/main.1ffc9eb6.css.map",
-    "main.1dd94fa0.js.map": "/holiday-photos/static/js/main.1dd94fa0.js.map"
+    "main.671328a8.css.map": "/holiday-photos/static/css/main.671328a8.css.map",
+    "main.01fd204e.js.map": "/holiday-photos/static/js/main.01fd204e.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ffc9eb6.css",
-    "static/js/main.1dd94fa0.js"
+    "static/css/main.671328a8.css",
+    "static/js/main.01fd204e.js"
   ]
 }
