@@ -6,6 +6,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../services/AuthServices";
 import FormatModal from "../formatModal/formatModal";
 import PhotoModal from "../photoModal/photoModal";
+import "./imageLayout9.scss";
 
 const imageLayout9 = () => {
   const [images, setImages] = useState([]);
@@ -20,10 +21,7 @@ const imageLayout9 = () => {
   return (
     <div className="container mainDiv">
       <FormatModal />
-      <div
-        className="photoContainerFormat2"
-        style={{ display: "flex", flexWrap: "wrap" }}
-      >
+      <div className="photoContainerFormat2">
         {images.map((image, index) => (
           <Image9
             key={image.id}

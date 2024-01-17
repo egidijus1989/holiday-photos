@@ -20,7 +20,7 @@ const Image9 = (props) => {
         src={props.imageUrl}
         className="card-img-top image1"
         alt="Photo label"
-        style={{ aspectRatio: "2/5" }}
+        style={{ objectFit: "cover", aspectRatio: "1/2" }}
       />
       <div className="deleteIcon">
         <Link
